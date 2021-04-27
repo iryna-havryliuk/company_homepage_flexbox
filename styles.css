@@ -33,6 +33,14 @@ nav a {
  font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 760px) {
+    header {
+        height: 6rem;
+    }
+}
+
+
+
 .mission {
     background-image: url(images/brooke-lark-8beTH4VkhLI-unsplash.jpg);
     background-position: center;
@@ -87,3 +95,10 @@ figure {
     border-radius: 40%;
 }
 
+@media only screen and (max-width: 760px) {
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
