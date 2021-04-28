@@ -4,40 +4,40 @@ body {
     font-size: 22px;
     text-align: center;
     background-color: cornsilk;
-}
-
-header {
-    width: 100%;
-    height: 4rem;
-    align-items: center;
-    border-bottom: blueviolet 1px solid;
-    position: fixed;
-    background-color: cornsilk;
-    z-index: 1;
+    color: #4449AD;
 }
 
 .flex-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
+
+header {
+    width: 100%;
+    min-height: 4rem;
+    border-bottom: #9398FA 1px solid;
+    position: fixed;
+    background-color: cornsilk;
+    z-index: 1;
+}
+
 .logo {
     font-family: 'Great Vibes', cursive;
     font-size: 2.5rem;
     padding-left: 10px;
     text-decoration: none;
+    color: crimson;
 }
 
 nav a {
  padding: 1rem;
  font-size: 1.2rem;
+ color: crimson;
 }
 
-@media only screen and (max-width: 760px) {
-    header {
-        height: 6rem;
-    }
-}
+
 
 
 
@@ -47,14 +47,13 @@ nav a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 1200px;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  
 }
 
  .mission-content {
     background-color:cornsilk;
     width: 100%;
-    color: rgb(43, 46, 226);
+    opacity: 0.8;
 }
 
 .mission-content h1 {
@@ -70,15 +69,13 @@ nav a {
 
 
 .flavors {
-    height: 1000px;
     justify-content: center;
     padding-top: 40px;
-    
 }
 
 figure {
     display: flex;
-    width: 1500px;
+    max-width: 1500px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -91,14 +88,56 @@ figure {
 .item img {
     width: 250px;
     height: 300px;
-    border: blueviolet 1px solid;
+    border: #9398FA 1px solid;
     border-radius: 40%;
 }
 
-@media only screen and (max-width: 760px) {
-    figure {
-        display: flex;
-        flex-direction: column;
-    }
+
+
+
+
+
+#location {
+    max-width: 1500px;
+    justify-content: space-evenly;  
+    flex-wrap: wrap;
+    padding-top: 40px;
+    text-align: left;
+    margin: 0 auto;
+    border-top:#9398FA 1px solid ;
+}
+
+.location-text p {
+    margin: 5px;
+}
+
+.location-image img {
+    max-width: 700px;
+    height: auto;
+}
+
+
+
+
+footer {
+    border-top: #9398FA 1px solid;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+footer .flex-container {
+    max-width: 1500px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
 
 }
+
+
